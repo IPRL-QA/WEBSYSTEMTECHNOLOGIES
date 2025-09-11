@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Sample Website</title>
+<style>
+       /* General Reset */
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       body {
+           font-family: Arial, sans-serif;
+           line-height: 1.6;
+           max-width: 1200px;
+           margin: auto;
+           padding: 20px;
+       }
+       header {
+           background: #9ef7b9;
+           color: rgb(5, 5, 5);
+           padding: 20px;
+           text-align: center;
+       }
+       nav ul {
+           display: flex;
+           justify-content: center;
+           list-style: none;
+           background: #333;
+       }
+       nav ul li {
+           margin: 0 15px;
+       }
+       nav ul li a {
+           color: white;
+           text-decoration: none;
+           padding: 10px;
+           display: block;
+       }
+       nav ul li a:hover {
+           background: #575757;
+           border-radius: 5px;
+       }
+       section {
+           margin: 40px 0;
+       }
+       img {
+           margin: 10px;
+           border-radius: 10px;
+           transition: transform 0.3s;
+       }
+       /* 2D Transform */
+       img:hover {
+           transform: scale(1.1);
+       }
+       /* 3D Transform */
+       video {
+           display: block;
+           margin: 20px auto;
+           border: 2px solid #333;
+           border-radius: 8px;
+           transition: transform 0.6s;
+       }
+       video:hover {
+           transform: rotateY(15deg);
+       }
+       /* Form Styling */
+       form {
+           background: #f4f4f4;
+           padding: 20px;
+           border-radius: 8px;
+           max-width: 500px;
+           margin: auto;
+       }
+       form input, form textarea, form button {
+           width: 100%;
+           padding: 10px;
+           margin: 8px 0;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+       form button {
+           background: #4CAF50;
+           color: white;
+           cursor: pointer;
+           border: none;
+       }
+       form button:hover {
+           background: #45a049;
+       }
+       footer {
+           text-align: center;
+           padding: 15px;
+           background: #333;
+           color: white;
+           margin-top: 20px;
+       }
+       /* Responsive */
+       @media (max-width: 768px) {
+           nav ul {
+               flex-direction: column;
+           }
+           img {
+               width: 100%;
+           }
+           video {
+               width: 100%;
+           }
+       }
+</style>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+<h1>Web System and Technologies</h1>
+<p>Assignment Laboratory</p>
+</header>
+<!-- Navigation -->
+<nav>
+<ul>
+<li><a href="#about">About Me</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<!-- About Section -->
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! My name is Jhed Micheal Pagatpatan, and I enjoy learning web development.
+       </p>
+</section>
+<!-- Gallery Section -->
+<section id="gallery">
+<h2>Image Gallery</h2>
+<p>Here are some free stock images:</p>
+<img src="https://www.pexels.com/photo/person-s-eye-showing-on-television-screen-8875646/" alt="Nature Image" width="300">
+<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Tree Image" width="300">
+</section>
+<!-- Video Section -->
+<section id="video">
+<h2>Sample Video</h2>
+<p>Here is a free stock video:</p>
+<video width="400" controls>
+<source src="https://player.vimeo.com/external/310015698.sd.mp4?s=21b91d" type="video/mp4">
+           Your browser does not support the video tag.
+</video>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Me</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Message"></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 My Sample Website. All rights reserved.</p>
+</footer>
+</body>
+</html>
