@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter with Background Color Change</title>
+</head>
+<body>
+  <p>Count: <span id="count">0</span></p>
+  <button onclick="increaseCount()">Increase</button>
+
+  <script>
+    let count = 0;
+    const colors = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lightgray", "orange", "violet"];
+    
+    function increaseCount() {
+      // Increase count
+      count++;
+      document.getElementById("count").innerText = count;
+
+      // Change background color based on count
+      let index = (count - 1) % colors.length;
+      document.body.style.backgroundColor = colors[index];
+    }
+  </script>
+</body>
+</html>

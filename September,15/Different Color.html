@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Example</title>
+</head>
+<body>
+  <button onclick="changeColor()">Change Background</button>
+
+  <script>
+    // List of colors to cycle through
+    const colors = ["lightblue", "lightgreen", "lightpink", "lightyellow", "lightgray", "orange", "violet"];
+    let index = 0;
+
+    function changeColor() {
+      // Apply the next color
+      document.body.style.backgroundColor = colors[index];
+      
+      // Move to the next color (loop back when finished)
+      index = (index + 1) % colors.length;
+    }
+  </script>
+</body>
+</html>
